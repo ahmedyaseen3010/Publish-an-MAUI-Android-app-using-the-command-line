@@ -40,5 +40,5 @@ After the process finishes successfully, navigate to the project bin folder:
  
 ## Additional Resources
 For more detailed instructions, refer to the official Microsoft documentation on MAUI and Android development.
-  ```bash
-https://learn.microsoft.com/en-us/dotnet/maui/android/deployment/publish-cli?view=net-maui-8.0
+
+(https://learn.microsoft.com/en-us/dotnet/maui/android/deployment/publish-cli?view=net-maui-8.0)
