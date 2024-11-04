@@ -1,7 +1,9 @@
 # Publish an Android App using the Command Line on .NET MAUI
 
 Referenced from the Microsoft documentation and based on experience, here's what you will need to get the .apk file to install your application on Android devices.
-![Alt text](images/AI.png)
+
+<img src="images/AI.png" alt="Alt text" width="300"/>
+
 
 ## Prerequisites
 
