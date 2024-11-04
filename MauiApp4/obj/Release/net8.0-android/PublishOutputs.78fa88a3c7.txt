@@ -1,0 +1,4 @@
+C:\Users\orchida\source\repos\MauiApp4\MauiApp4\bin\Release\net8.0-android\publish\com.companyname.mauiapp4-Signed.aab
+C:\Users\orchida\source\repos\MauiApp4\MauiApp4\bin\Release\net8.0-android\publish\com.companyname.mauiapp4.aab
+C:\Users\orchida\source\repos\MauiApp4\MauiApp4\bin\Release\net8.0-android\publish\com.companyname.mauiapp4-Signed.apk
+C:\Users\orchida\source\repos\MauiApp4\MauiApp4\bin\Release\net8.0-android\publish\_Microsoft.Android.Resource.Designer.dll
