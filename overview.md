@@ -6,32 +6,32 @@
 
 ## Index
 
-- [Document Release History](#document-release-history)
-- [1. Introduction](#introduction)
-- [2. Purpose and Scope](#purpose-and-scope)
-- [3. System Overview](#system-overview)
-- [4. Key Features](#key-features)
-- [5. Services](#services)
-  - [5.1 API Integration](#api-integration)
-  - [5.2 Manual User Input](#manual-user-input)
-  - [5.3 Peppol Compliance](#peppol-compliance)
-- [6. Dashboard Interface](#dashboard-interface)
-  - [6.1 Login Page](#login-page)
-  - [6.2 Invoices Management Page](#invoices-management-page)
-    - [Invoice Table & Pagination](#invoice-table--pagination)
-    - [Invoice Details Section](#invoice-details-section)
-  - [6.3 Sales Invoices](#sales-invoices)
-    - [Add Invoice](#add-invoice)
-    - [Rejected and Archived Invoices](#rejected-and-archived-invoices)
-  - [6.4 Purchase Invoices](#purchase-invoices)
-  - [6.5 Single Invoice Display](#single-invoice-display)
-  - [6.6 Main Definitions](#main-definitions)
-  - [6.7 Help Screens](#help-screens)
-- [7. Peppol Compliance](#peppol-compliance-1)
-  - [7.1 Access Point](#access-point)
-  - [7.2 Service Metadata Publisher (SMP)](#service-metadata-publisher-smp)
-- [8. Setup Requirements](#setup-requirements)
-- [9. Conclusion](#conclusion)
+1. [Document Release History](#document-release-history)
+2. [Introduction](#introduction)
+3. [Purpose and Scope](#purpose-and-scope)
+4. [System Overview](#system-overview)
+5. [Key Features](#key-features)
+6. [Services](#services)
+   1. [API Integration](#api-integration)
+   2. [Manual User Input](#manual-user-input)
+   3. [Peppol Compliance](#peppol-compliance)
+7. [Dashboard Interface](#dashboard-interface)
+   1. [Login Page](#login-page)
+   2. [Invoices Management Page](#invoices-management-page)
+      1. [Invoice Table & Pagination](#invoice-table--pagination)
+      2. [Invoice Details Section](#invoice-details-section)
+   3. [Sales Invoices](#sales-invoices)
+      1. [Add Invoice](#add-invoice)
+      2. [Rejected and Archived Invoices](#rejected-and-archived-invoices)
+   4. [Purchase Invoices](#purchase-invoices)
+   5. [Single Invoice Display](#single-invoice-display)
+   6. [Main Definitions](#main-definitions)
+   7. [Help Screens](#help-screens)
+8. [Peppol Compliance](#peppol-compliance-1)
+   1. [Access Point](#access-point)
+   2. [Service Metadata Publisher (SMP)](#service-metadata-publisher-smp)
+9. [Setup Requirements](#setup-requirements)
+10. [Conclusion](#conclusion)
 
 ---
 
@@ -43,13 +43,13 @@
 
 ---
 
-## 1. Introduction
+## Introduction
 
 Orchida E-Invoice, developed by Orchida Soft, is a cloud-based platform designed to streamline electronic invoice processing. It ensures tax compliance and Peppol interoperability, offering a user-centric dashboard for managing invoices via manual entry or API integration. This document provides a comprehensive overview of the application's features, dashboard functionalities, and Peppol compliance.
 
 ---
 
-## 2. Purpose and Scope
+## Purpose and Scope
 
 ### Purpose
 This document aims to provide users, administrators, and developers with a clear understanding of the Orchida E-Invoice system, its interface, and technical capabilities, with a focus on the Invoices Management Page and Peppol compliance.
@@ -63,13 +63,13 @@ This document aims to provide users, administrators, and developers with a clear
 
 ---
 
-## 3. System Overview
+## System Overview
 
 Orchida E-Invoice is a cloud-based platform for managing electronic invoices, supporting businesses in creating, viewing, and tracking sales and purchase invoices. It ensures compliance with tax regulations and Peppol standards, featuring role-based access control, detailed invoice management, and integrated support features.
 
 ---
 
-## 4. Key Features
+## Key Features
 
 - **Login Page**: Secure OTP-based authentication via Email or WhatsApp.
 - **Invoices Management Page**: Centralized hub for tracking and managing invoices.
@@ -82,44 +82,44 @@ Orchida E-Invoice is a cloud-based platform for managing electronic invoices, su
 
 ---
 
-## 5. Services
+## Services
 
-### 5.1 API Integration
+### API Integration
 - Automates invoice creation, submission, and retrieval.
 - Integrates with ERP systems and third-party platforms.
 - Ensures real-time synchronization of invoice data.
 
-### 5.2 Manual User Input
+### Manual User Input
 - Intuitive forms for adding/editing invoices.
 - Detailed grids for viewing invoice data.
 - User-friendly interface for non-technical users.
 
-### 5.3 Peppol Compliance
+### Peppol Compliance
 - **Access Point**: Facilitates secure invoice exchange within the Peppol network.
 - **SMP Solution**: Manages service metadata for dynamic recipient discovery.
 
 ---
 
-## 6. Dashboard Interface
+## Dashboard Interface
 
 The Orchida E-Invoice dashboard is the central hub for all invoicing activities, designed for ease of use and efficiency.
 
-### 6.1 Login Page
+### Login Page
 Secure access via OTP-based authentication.
 
-| Field Name       | Explanation                       |
-|------------------|-----------------------------------|
-| OTP Delivery     | Choose OTP via Email or WhatsApp. |
-| OTP Input        | Enter OTP received.               |
+| Field Name   | Explanation                       |
+|--------------|-----------------------------------|
+| OTP Delivery | Choose OTP via Email or WhatsApp. |
+| OTP Input    | Enter OTP received.               |
 
-**Buttons**:
+#### Actions
 - **Resend**: Resend OTP if not received.
 - **Verify**: Submit OTP for login.
 
-![Login Page 1](./media/image2.png)
+![Login Page 1](./media/image2.png)  
 ![Login Page 2](./media/image3.png)
 
-### 6.2 Invoices Management Page
+### Invoices Management Page
 A core component for tracking and managing invoices, supporting financial accuracy and tax compliance.
 
 #### Invoice Table & Pagination
@@ -140,7 +140,7 @@ Displays a list of invoices with multiselect and pagination.
 | 11  | Customer Code    | Unique customer identifier in seller's system.  |
 | 12  | Branch           | Company branch identifier.                      |
 
-**Actions**:
+#### Actions
 - **Submit**: Sends invoice to tax portal or internal system.
 - **Reject**: Prompts for rejection reason.
 - **Archive**: Archives the invoice.
@@ -182,7 +182,7 @@ Expandable accordion displaying detailed invoice information.
 
 ![Invoice Details](./media/image5.png)
 
-### 6.3 Sales Invoices
+### Sales Invoices
 Screens for viewing, adding, rejecting, and archiving sales invoices.
 
 #### Add Invoice
@@ -200,22 +200,24 @@ Form for creating new invoices.
 | 8   | Currency           | Transaction currency (e.g., USD, EUR).  |
 | 9   | Branch             | Company branch identifier.              |
 
-**Buttons**:
+#### Actions
 - **Add**: Creates a new invoice.
 
 ![Add Invoice](./media/image6.png)
 
 #### Rejected and Archived Invoices
-- **Rejected Invoices**: Lists rejected invoices with a "Reason" field.
+- **Rejected Invoices**: Lists rejected invoices with a reason field.
+
   | No. | Field Name | Explanation              |
   |-----|------------|--------------------------|
   | 1   | Reason     | Reason for rejection.    |
+
 - **Archived Invoices**: Stores finalized invoices, mirroring the View Invoices structure.
 
-### 6.4 Purchase Invoices
-Mirrors Sales Invoices structure with an additional "Reject Invoice" button prompting for a rejection reason.
+### Purchase Invoices
+Mirrors Sales Invoices structure with an additional **Reject Invoice** action prompting for a rejection reason.
 
-### 6.5 Single Invoice Display
+### Single Invoice Display
 Detailed view of a single invoice with header, product, and summary grids.
 
 | No. | Field Name     | Explanation                           |
@@ -251,7 +253,7 @@ Detailed view of a single invoice with header, product, and summary grids.
 
 ![Single Invoice](./media/image7.png)
 
-### 6.6 Main Definitions
+### Main Definitions
 
 #### User Rights
 Role-based access control for Admin and Standard users with permissions (View/Modify/Deny) per page or feature.
@@ -287,39 +289,50 @@ Manages the customer and supplier database.
 | 5   | Billing Address | Address for sending invoices. |
 | 6   | Contact         | Phone number and/or email of the contact person. |
 
-### 6.7 Help Screens
-- **E-Invoice News**: System updates and announcements.
-  ![News](./media/image8.png)
-- **Tickets**: Submit support requests (Ticket ID, Title, Description, Contact Email, Phone, Status).
-  ![Tickets](./media/image9.png)
-- **FAQ**: Accordion-style list of common questions/answers.
-  ![FAQ](./media/image10.png)
-- **About**: System version and company information.
+### Help Screens
+
+#### E-Invoice News
+System updates and announcements.
+
+![E-Invoice News](./media/image8.png)
+
+#### Tickets
+Submit support requests with fields for Ticket ID, Title, Description, Contact Email, Phone, and Status.
+
+![Tickets](./media/image9.png)
+
+#### FAQ
+Accordion-style list of common questions and answers.
+
+![FAQ](./media/image10.png)
+
+#### About
+System version and company information.
 
 ---
 
-## 7. Peppol Compliance
+## Peppol Compliance
 
 Orchida E-Invoice supports Peppol e-invoicing through integrated Access Point and SMP solutions.
 
-### 7.1 Access Point
+### Access Point
 - Secure transmission using AS4 protocol.
 - Supports Peppol BIS Billing 3.0 and other document types.
 - Validates invoices against Peppol specifications.
 
-### 7.2 Service Metadata Publisher (SMP)
+### Service Metadata Publisher (SMP)
 - Registers participant identifiers and document types.
 - Integrates with Peppol Service Metadata Locator (SML).
-- Supports Peppol’s four-corner model for secure invoicing.
+- Supports Peppol's four-corner model for secure invoicing.
 
 ---
 
-## 8. Setup Requirements
+## Setup Requirements
 
 To set up Orchida E-Invoice for Peppol compliance:
-1. **Register with a Peppol Authority**: Obtain a participant identifier.
-2. **Integrate SMP**: Configure SMP to register services and document types with Peppol SML.
-3. **Provide Seller Data**:
+1. Register with a Peppol Authority: Obtain a participant identifier.
+2. Integrate SMP: Configure SMP to register services and document types with Peppol SML.
+3. Provide Seller Data:
    - Seller trading name
    - Seller name
    - Seller postal address
@@ -332,7 +345,7 @@ To set up Orchida E-Invoice for Peppol compliance:
 
 ---
 
-## 9. Conclusion
+## Conclusion
 
 Orchida E-Invoice, developed by ORCHIDA SOFT BUSINESS SOLUTIONS, offers a robust platform for managing electronic invoices. With its intuitive dashboard, detailed Invoices Management Page, API integration, manual input, and Peppol compliance, it meets the needs of businesses seeking efficient and compliant invoicing solutions. For support, contact us at [insert contact details].
 
