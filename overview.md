@@ -252,33 +252,40 @@ Detailed view of a single invoice with header, product, and summary grids.
 ![Single Invoice](./media/image7.png)
 
 ### 6.6 Main Definitions
-- **User Rights**: Role-based access (Admin/Standard) with permissions (View/Modify/Deny).
-  | No. | Field Name   | Explanation                          |
-  |-----|--------------|------------------------------|
-  | 1   | User ID      | Unique user identifier.      |
-  | 2   | Name         | Full name of the user.       |
-  | 3   | Role         | Admin or Standard.           |
-  | 4   | Permissions  | Access levels per page/feature. |
 
-- **Items**: Manages product catalog.
-  | No. | Field Name       | Explanation                          |
-  |-----|------------------|------------------------------|
-  | 1   | Item Code        | Unique identifier.           |
-  | 2   | Description      | Detailed item info.          |
-  | 3   | Unit Price       | Price per unit, excluding taxes. |
-  | 4   | Tax Rate         | Percentage of tax applied.   |
-  | 5   | Unit of Measurement | Unit (e.g., piece, kg).   |
-  | 6   | Name             | Item title.                 |
+#### User Rights
+Role-based access control for Admin and Standard users with permissions (View/Modify/Deny) per page or feature.
 
-- **Clients**: Manages customer/supplier database.
-  | No. | Field Name      | Explanation                          |
-  |-----|-----------------|------------------------------|
-  | 1   | Name            | Buyer or seller name.        |
-  | 2   | TIN             | Tax Identification Number.   |
-  | 3   | Code            | Internal/external reference code. |
-  | 4   | Address         | Full address details.        |
-  | 5   | Billing Address | Address for invoices.        |
-  | 6   | Contact         | Phone/email of contact person. |
+| No. | Field Name   | Explanation                          |
+|-----|--------------|------------------------------|
+| 1   | User ID      | Unique identifier for each user. |
+| 2   | Name         | Full name of the user.       |
+| 3   | Role         | Admin or Standard.           |
+| 4   | Permissions  | Access levels per page/feature. |
+
+#### Items
+Manages the product catalog for invoicing purposes.
+
+| No. | Field Name         | Explanation                          |
+|-----|--------------------|------------------------------|
+| 1   | Item Code          | Unique identifier for the item. |
+| 2   | Description        | Detailed information about the item. |
+| 3   | Unit Price         | Price per unit, excluding taxes. |
+| 4   | Tax Rate           | Percentage of tax applied.   |
+| 5   | Unit of Measurement | Measurement unit (e.g., piece, kg, liter). |
+| 6   | Name               | Name or title of the item.   |
+
+#### Clients
+Manages the customer and supplier database.
+
+| No. | Field Name      | Explanation                          |
+|-----|-----------------|------------------------------|
+| 1   | Name            | Name of the buyer or seller. |
+| 2   | TIN             | Tax Identification Number.   |
+| 3   | Code            | Internal or external reference code. |
+| 4   | Address         | Full address details (Street, City, Country, Building No., Postal Code). |
+| 5   | Billing Address | Address for sending invoices. |
+| 6   | Contact         | Phone number and/or email of the contact person. |
 
 ### 6.7 Help Screens
 - **E-Invoice News**: System updates and announcements.
