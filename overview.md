@@ -206,13 +206,16 @@ Form for creating new invoices.
 ![Add Invoice](./media/image6.png)
 
 #### Rejected and Archived Invoices
-- **Rejected Invoices**: Lists rejected invoices with a reason field.
 
-  | No. | Field Name | Explanation              |
-  |-----|------------|--------------------------|
-  | 1   | Reason     | Reason for rejection.    |
+##### Rejected Invoices
+Lists invoices rejected by tax authorities or clients, including a field for the reason for rejection.
 
-- **Archived Invoices**: Stores finalized invoices, mirroring the View Invoices structure.
+| No. | Field Name | Explanation              |
+|-----|------------|--------------------------|
+| 1   | Reason     | Reason for rejection.    |
+
+##### Archived Invoices
+Stores finalized invoices, mirroring the structure of the View Invoices screen for consistency.
 
 ### Purchase Invoices
 Mirrors Sales Invoices structure with an additional **Reject Invoice** action prompting for a rejection reason.
